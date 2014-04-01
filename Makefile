@@ -31,7 +31,7 @@ force:
 	$(MAKE) -W $(PROJECT).tex
 
 clean:
-	rm -f *.{out,brf,toc,lof,bbl,blg,bak,aux,dvi,ps,log} *~
+	rm -f *.{pdf,out,brf,toc,lof,bbl,blg,bak,aux,dvi,ps,log,tmp} *~
 
 dist: pdf clean
 	( cd .. ; \
