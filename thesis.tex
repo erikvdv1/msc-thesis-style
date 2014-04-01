@@ -73,6 +73,18 @@ ThePlace, the Netherlands\\
 \maxsecnumdepth{subsection}
 
 \begin{document}
+
+%---------------------------------------------------------------------%
+%                     Custom commands                                 %
+%---------------------------------------------------------------------%
+
+\newcommand{\reff}[2]{\hyperref[#2]{{#1}\ref*{#2}}}
+\newcommand{\refff}[3]{\hyperref[#2]{{#1}\ref*{#2}{#3}}}
+
+%---------------------------------------------------------------------%
+%                     Document start                                  %
+%---------------------------------------------------------------------%
+
 \frontmatter
 \thispagestyle{empty}
 \maketitle                                      % for the cover page
@@ -99,5 +111,8 @@ ThePlace, the Netherlands\\
 \include{appendix}
 \include{requirements}
 
+%---------------------------------------------------------------------%
+%                     Document end                                    %
+%---------------------------------------------------------------------%
 
 \end{document}
