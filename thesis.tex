@@ -12,15 +12,13 @@
 \let\newfloat\undefined \usepackage{algorithmic}
 \usepackage{algorithm}
 
-% Include right (LaTeX/PDFLaTeX) graphics package
-% (doesn't work under cygwin apperently)
-%\ifx\pdftexversion\undefined
-\usepackage[dvips]{graphicx}
-\usepackage[dvips]{color}
-%\else
-%\usepackage[pdftex]{graphicx}
-%\usepackage[pdftex]{color}
-%\fi
+% Include graphics package
+\usepackage{graphicx}
+\usepackage{color}
+
+% Make table of content clickable (hide color boxes with hidelinks)
+\let\ifpdf\relax
+\usepackage[hidelinks]{hyperref}
 
 %---------------------------------------------------------------------%
 %                     Options                                         %
