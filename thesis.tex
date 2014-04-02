@@ -32,7 +32,7 @@
 %\subtitle{}
 
 \author{Student Name}                              % CHANGE TO YOUR NAME
-\authoremail{\href{mailto:name@student.tudelft.nl}{\nolinkurl{name@student.tudelft.nl}}}        % CHANGE TO YOUR EMAIL ADDRESS
+\authoremail{\mailurl{name@student.tudelft.nl}}    % CHANGE TO YOUR EMAIL ADDRESS
 \birthplace{Delft, the Netherlands}                % CHANGE TO YOUR BIRTH PLACE
 \studentid{123456789}                              % CHANGE TO YOUR STUDENT ID
 
@@ -43,7 +43,7 @@
 Some Company\\
 With it's address\\
 ThePlace, the Netherlands\\
-\href{http://www.url.nl}{\nolinkurl{www.url.nl}}
+\httpurl{www.url.nl}
 }
 
 % Optional (postscript) cover picture. Put this in comments when not needed.
@@ -80,6 +80,8 @@ ThePlace, the Netherlands\\
 
 \newcommand{\reff}[2]{\hyperref[#2]{{#1}\ref*{#2}}}
 \newcommand{\refff}[3]{\hyperref[#2]{{#1}\ref*{#2}{#3}}}
+\newcommand{\httpurl}[1]{\href{http://#1}{\nolinkurl{#1}}}
+\newcommand{\mailurl}[1]{\href{mailto:#1}{\nolinkurl{#1}}}
 
 %---------------------------------------------------------------------%
 %                     Document start                                  %
