@@ -6,11 +6,9 @@
 \usepackage{mscthesis}
 \usepackage{lipsum} % standard filler text, only needed for demo
 
-% %% The package 'algorithm' is useful, but incompatible with memoir.
-% %% Cor-Paul Bezemer / http://homes.esat.kuleuven.be/~dvherten/esatthesis.html
-% %% suggest the following fix:
-\let\newfloat\undefined \usepackage{algorithmic}
-\usepackage{algorithm}
+ % Number algorithms per chapter
+\usepackage{algorithmic}
+\usepackage[chapter]{algorithm}
 
 % Include graphics package
 \usepackage{graphicx}
@@ -18,6 +16,8 @@
 
 % Make table of content clickable (hide color boxes with hidelinks)
 \usepackage[hidelinks]{hyperref}
+% Make references point to the top of the elements
+\usepackage[all]{hypcap}
 
 %---------------------------------------------------------------------%
 %                     Options                                         %
@@ -85,6 +85,9 @@
 
 \cleardoublepage\tableofcontents
 \cleardoublepage\listoffigures
+%\cleardoublepage\listoftables
+%\cleardoublepage{\let\newpage\relax \listofalgorithms}
+%\addcontentsline{toc}{chapter}{\listalgorithmname}
 \cleardoublepage\mainmatter
 
 \include{introduction}
