@@ -30,11 +30,12 @@ view: $(PROJECT).pdf
 force:
 	$(MAKE) -W $(PROJECT).tex
 
-clean:
-	rm -f *.{pdf,out,brf,toc,lof,bbl,blg,bak,aux,dvi,ps,log,tmp} *~
-
 dist: pdf clean
 	( cd .. ; \
 	rm -rf thesis-style_`date +%Y%m%d`.zip ; \
 	zip -r thesis-style_`date +%Y%m%d`.zip thesis-style -x \*/.svn/\* \*/auto/\*   )
 	cp thesis.pdf ../thesis-style_`date +%Y%m%d`.pdf
+
+clean:
+	rm -f *.{pdf,out,brf,toc,lof,bbl,blg,bak,aux,dvi,ps,log,tmp} *~
+	rm -f img/*-eps-converted-to.pdf

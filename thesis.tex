@@ -4,6 +4,7 @@
 \usepackage{url}
 \usepackage{mscthesis}
 \usepackage{lipsum} % standard filler text, only needed for demo
+\usepackage{ifpdf}
 
  % Number algorithms per chapter
 \usepackage{algorithmic}
@@ -12,6 +13,11 @@
 % Include graphics package
 \usepackage{graphicx}
 \usepackage{color}
+
+% Convert .eps images to .pdf (PDFLaTeX)
+\ifpdf
+\usepackage{epstopdf}
+\fi
 
 % Make table of content clickable (hide color boxes with hidelinks)
 \usepackage[hidelinks]{hyperref}
