@@ -116,7 +116,7 @@
 
 \def\makeformaltitlepages#1{
 \begingroup\newpage
-\thispagestyle{empty}\setcounter{page}{1}
+\thispagestyle{empty}%\setcounter{page}{1}
 \let\footnotesize\small \let\footnoterule\relax
 %\null
 \noindent\rule{\textwidth}{1.5pt}
@@ -161,7 +161,7 @@ born in \@birthplace{}
 \vfill
 \@colophon{}
 \cleardoublepage
-\thispagestyle{empty}\setcounter{page}{1}
+\thispagestyle{empty}%\setcounter{page}{1}
 \noindent\rule{\textwidth}{1.5pt}
 \begin{center}
   {\Huge \@title \par}
