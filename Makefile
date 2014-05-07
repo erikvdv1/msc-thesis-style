@@ -37,5 +37,5 @@ dist: pdf clean
 	cp thesis.pdf ../thesis-style_`date +%Y%m%d`.pdf
 
 clean:
-	rm -f *.{pdf,out,brf,toc,lof,bbl,blg,bak,aux,dvi,ps,log,tmp} *~
+	rm -f *.{pdf,out,brf,toc,lof,lot,loa,synctex,bbl,blg,bak,aux,dvi,ps,log,tmp} *~
 	rm -f img/*-eps-converted-to.pdf
