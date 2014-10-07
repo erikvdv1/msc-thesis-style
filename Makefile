@@ -3,7 +3,7 @@ SHELL           = /bin/sh
 PROJECT         = thesis
 PS2PDF          = ps2pdf14
 DVIPS_FLAGS     = -Pcmz -Pamz -tA4
-HTML_DIR        = html
+OUT_DIR         = out
 
 .PHONY          = all clean
 
@@ -11,14 +11,15 @@ HTML_DIR        = html
 
 all: pdf
 
-pdf: $(PROJECT).pdf
+pdf: $(OUT_DIR)/$(PROJECT).pdf
 
-html: $(HTML_DIR)/$(PROJECT).html
+html: $(OUT_DIR)/$(PROJECT).html
 
-view: $(PROJECT).pdf
+view: $(OUT_DIR)/$(PROJECT).pdf
 	acroread $(<)
 
-%.pdf: %.ps
+$(OUT_DIR)/%.pdf: %.ps
+	mkdir -p $(OUT_DIR)
 	$(PS2PDF) $(<) $(@)
 
 %.ps: %.dvi
@@ -30,9 +31,9 @@ view: $(PROJECT).pdf
 	latex $(<)
 	latex $(<)
 
-$(HTML_DIR)/%.html: %.tex
-	mkdir -p $(HTML_DIR)
-	htlatex $(PROJECT).tex html "" -d$(HTML_DIR)
+$(OUT_DIR)/%.html: %.tex
+	mkdir -p $(OUT_DIR)
+	htlatex $(PROJECT).tex html "" -d$(OUT_DIR)
 	rm $(PROJECT).html $(PROJECT).css
 
 force:
@@ -47,4 +48,4 @@ dist: pdf clean
 clean:
 	rm -f *.{pdf,out,brf,toc,lof,lot,loa,synctex,bbl,blg,bak,aux,dvi,ps,log,tmp,idv,lg,xref,4ct,4tc} *~
 	rm -f img/*-eps-converted-to.pdf
-	rm -rf $(HTML_DIR)
+	rm -rf $(OUT_DIR)

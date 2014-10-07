@@ -8,12 +8,11 @@
 *.toc
 
 ## Intermediate documents:
-*.dvi
+/out
+/*.dvi
 /*.ps
 /*.eps
-/*.pdf
 *-eps-converted-to.pdf
-/html
 
 ## Bibliography auxiliary files (bibtex/biblatex/biber):
 *.bbl
