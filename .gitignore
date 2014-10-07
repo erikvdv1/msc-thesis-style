@@ -13,6 +13,7 @@
 /*.eps
 /*.pdf
 *-eps-converted-to.pdf
+/html
 
 ## Bibliography auxiliary files (bibtex/biblatex/biber):
 *.bbl
@@ -81,6 +82,13 @@
 *.sout
 *.sympy
 sympy-plots-for-*.tex/
+
+# tex4ht
+*.4ct
+*.4tc
+*.idv
+*.lg
+*.xref
 
 # todonotes
 *.tdo
