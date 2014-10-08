@@ -13,6 +13,7 @@
 % Include graphics package
 \usepackage{graphicx}
 \usepackage{color}
+\definecolor{grey}{gray}{0.50}
 
 % Convert .eps images to .pdf (PDFLaTeX)
 \ifpdf
@@ -74,6 +75,13 @@
 \setcounter{tocdepth}{1}
 \setsecnumdepth{subsection}
 \maxsecnumdepth{subsection}
+
+%---------------------------------------------------------------------%
+%                     Custom commands                                 %
+%---------------------------------------------------------------------%
+
+\newcommand{\todo}[1]{\textcolor{red}{\textsc{todo:} #1}}
+\newcommand{\note}[1]{\textcolor{grey}{\textsc{note:} #1}}
 
 \begin{document}
 
