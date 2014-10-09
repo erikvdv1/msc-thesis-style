@@ -3,6 +3,8 @@ Master's Thesis Style
 
 This repository is meant to act as a LaTeX template for Master theses. It is specifically written for Master students graduating at the [TU Delft SERG](http://swerl.tudelft.nl/bin/view/Main/WebHome) department.
 
+To get an impression of the style, view the [example PDF](https://github.com/erikvdv1/msc-thesis-style/releases/download/v1.0/msc-thesis-style-v1.0.pdf).
+
 The LaTeX style is based on the style written by [Leon Moonen](http://swerl.tudelft.nl/bin/view/Main/LeonMoonen), which is originally found at the [SERG website](http://swerl.tudelft.nl/bin/view/Main/MasterThesisStyle).
 
 > The use of a uniform layout helps you in formatting and structuring your thesis, and in creating proper bibliographic references through Bibtex. Furthermore, it helps us to quickly see where results can be found, and in comparing the theses from our group.
