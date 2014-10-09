@@ -1,7 +1,7 @@
 Master's Thesis Style
 =====================
 
-This repository is meant to act as a LaTeX template for Master theses. It is specifically written for Master students graduating at the [TU Delft SERG](http://swerl.tudelft.nl/bin/view/Main/WebHome) department.
+This repository contains a LaTeX template for master theses. It is specifically written for master students graduating at the [TU Delft SERG](http://swerl.tudelft.nl/bin/view/Main/WebHome) department.
 
 To get an impression of the style, view the [example PDF](https://github.com/erikvdv1/msc-thesis-style/releases/download/v1.0/msc-thesis-style-v1.0.pdf).
 
